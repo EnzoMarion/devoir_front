@@ -9,8 +9,8 @@ function App() {
     const handleSubmit = async (event) => {
         event.preventDefault()
 
-        const query = encodeURIComponent(formData.title)
-        const url = `https://dev.to/api/articles?top=1&per_page=10=${query}`
+        const query = encodeURIComponent(formData.title())
+        const url = `https://dev.to/api/articles?top=1&per_page=10`
 
         try {
             const response = await fetch(url)
