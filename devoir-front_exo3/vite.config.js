@@ -27,7 +27,6 @@ export default defineConfig({
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/dev\.to\/api\/articles\/.*/i,
-          // https://api-adresse.data.gouv.fr/search/?q=
           handler: 'CacheFirst',
           options: {
             cacheName: 'google-fonts-cache',

@@ -10,7 +10,7 @@ function App() {
         event.preventDefault()
 
         const query = encodeURIComponent(formData.title)
-        const url = `https://api-adresse.data.gouv.fr/search/?q=${query}`
+        const url = `https://dev.to/api/articles?top=1&per_page=10=${query}`
 
         try {
             const response = await fetch(url)
